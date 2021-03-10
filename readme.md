@@ -1,3 +1,5 @@
+<div></div>
+
 # esbuild-serve
 
 [Serve](https://github.com/nativew/serve) with live reload for [esbuild](https://github.com/evanw/esbuild).
@@ -49,8 +51,8 @@ esbuildServe(
 {
     "type": "module",
     "scripts": {
-        "start": "node esbuild.config.js -w", // watch mode
-        "build": "node esbuild.config.js" // Build only
+        "start": "node esbuild.config.js -w",
+        "build": "node esbuild.config.js"
     }
 }
 ```
