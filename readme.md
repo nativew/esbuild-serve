@@ -8,13 +8,13 @@
 
 ### Simple esbuild wrapper
 
-### Serves your static site
+### Serves your site locally
 
 ### With live reload
 
 ### Using esbuild's watch
 
-### And a single dependency
+### And an ultralight server
 
 <br>
 
@@ -60,6 +60,8 @@ esbuildServe(
 <br>
 
 ### Includes
+
+[esbuild](https://github.com/evanw/esbuild) &nbsp; → &nbsp; Extremely fast bundler and minifier.
 
 [Serve 🍛](https://github.com/nativew/serve) &nbsp; → &nbsp; Ultralight http server with live reload.
 
