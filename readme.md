@@ -4,19 +4,7 @@
 
 [Serve](https://github.com/nativew/serve) with live reload for [esbuild](https://github.com/evanw/esbuild).
 
-<br>
-
-### Simple esbuild wrapper
-
-### Serves your site locally
-
-### With live reload
-
-### Using esbuild's watch
-
-### And an ultralight server
-
-<br>
+`esbuild-serve` is a simple wrapper around [esbuild](https://github.com/evanw/esbuild) and [serve](https://github.com/nativew/serve). Serve your files locally, live relaod with esbuild's watch flag, along with an ultralight server.
 
 ### Install
 
@@ -24,9 +12,9 @@
 npm install esbuild-serve -D
 ```
 
-<br>
 
-### Use
+
+### Usage
 
 `esbuild.config.js`
 
@@ -34,8 +22,18 @@ npm install esbuild-serve -D
 import esbuildServe from 'esbuild-serve';
 
 esbuildServe(
-    {
-        // esbuild options
+    {   
+        //esbuild options
+        entryPoints: ['app.js'],
+        target: [
+            'es2020',
+            'chrome58',
+            'firefox57',
+            'safari11',
+            'edge16',
+            'node12',
+        ],
+        outfile: 'out.js',
     },
     {
         // serve options (optional)
