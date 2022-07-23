@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"create-serve": "^1.0.1",
-		"esbuild": "^0.9.0"
+		"esbuild": "^0.14.49"
 	},
 	"devDependencies": {
 		"prettier": "^2.2.1"
